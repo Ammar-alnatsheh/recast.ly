@@ -6,9 +6,9 @@ var searchYouTube = (options = {}, callback) => {
   var max = options['max'] || '5';
   var part = options['part'] || 'snippet';
   var query = options['query'] || 'react';
-  var type = options['type'] || '';
+  var type = options['type'] || 'video';
   var key = options[ 'key'] || YOUTUBE_API_KEY;
-  
+
   $.ajax({
     url: url,
     type: 'GET',
@@ -22,7 +22,7 @@ var searchYouTube = (options = {}, callback) => {
   }).done(function(data) {
     return callback(data.items);
   });
-  
+
 };
 
 export default searchYouTube;
