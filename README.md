@@ -1,6 +1,14 @@
 # recast.ly
 This is a project I completed as a student at [hackreactor](http://hackreactor.com). This project was worked on with a pair.
 
-From our previous sprint, we now have a simple yet functional React application hooked up to live YouTube data. This is spectacular, and now it's time to consider adding features to our application. But as we plan, more features turn into more components, handlers must be passed further up and down the component tree, or sometimes from laterally across our app... yikes! This is getting prohibitively complex very quickly!
+# React is Interesting in a Few Key Ways
+React uses JSX, which is a syntax extension to JS that is used to describe what the UI should look like.
+React offers two types of view components, a simple functional-style component, and a feature rich class-based component.
+When using React, developers don't have to listen to changes and manually trigger a re-render - instead, React will re-render the necessary components upon state change.
+Recast.ly demo
 
-One popular solution to the problem of increased complexity is flux design. This paradigm stresses a single state object as the sole "source of truth" for your application, and defines all user actions as changes to that state. Actions themselves are simply objects (or, if we are using Redux Thunk, functions), which must pass through a reducer function which defines how each action alters the state. In this sprint, we will walk through the process of converting our codebase to use Redux, a flux implementation that works very well with React.
+High Level Goals of this Sprint
+Learn React and how to think about web apps as components in React
+Learn how to transpile code with Babel's command line tool
+Practice using ES6 features
+Continue practicing interactions with a REST API (in this case, the YouTube Data API)
